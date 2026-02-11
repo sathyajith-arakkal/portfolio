@@ -11,8 +11,11 @@ const Work: React.FC = () => {
             <div className="absolute inset-0 engineering-grid opacity-20"></div>
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
             <div className="absolute inset-0 flex items-center justify-center">
-              {/* @ts-expect-error - spline-viewer is a custom element */}
-              <spline-viewer url="https://prod.spline.design/2M7Aa3uOK2Ww46mU/scene.splinecode"></spline-viewer>
+              <img
+                src="/images/ev-charging.webp"
+                alt="EV Charging Station Network"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
             </div>
           </div>
           <div className="lg:col-span-8 flex flex-col justify-center">
@@ -49,8 +52,11 @@ const Work: React.FC = () => {
             <div className="absolute inset-0 engineering-grid opacity-20"></div>
             <div className="absolute inset-0 bg-gradient-to-bl from-primary/10 to-transparent"></div>
             <div className="absolute inset-0 flex items-center justify-center">
-              {/* @ts-expect-error - spline-viewer is a custom element */}
-              <spline-viewer url="undefined"></spline-viewer>
+              <img
+                src="/images/fintech.webp"
+                alt="Fintech Trading Platform"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
             </div>
           </div>
           <div className="lg:col-span-8 flex flex-col justify-center">
