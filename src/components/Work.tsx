@@ -5,13 +5,14 @@ const Work: React.FC = () => {
     <section className="w-full max-w-[1200px] px-6 lg:px-10 py-20 border-t border-subtle" id="work">
       <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-12">Selected Projects</h3>
       <div className="space-y-16">
-        {/* Project 1 */}
+        {/* Project 1 - EV Platform */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 group">
           <div className="lg:col-span-4 h-64 lg:h-auto rounded-xl overflow-hidden bg-gray-200 dark:bg-gray-900 relative border border-subtle">
             <div className="absolute inset-0 engineering-grid opacity-20"></div>
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
-            <div className="absolute inset-0 flex items-center justify-center p-8">
-              <span className="material-symbols-outlined text-6xl text-primary/40">ev_station</span>
+            <div className="absolute inset-0 flex items-center justify-center">
+              {/* @ts-expect-error - spline-viewer is a custom element */}
+              <spline-viewer url="https://prod.spline.design/2M7Aa3uOK2Ww46mU/scene.splinecode"></spline-viewer>
             </div>
           </div>
           <div className="lg:col-span-8 flex flex-col justify-center">
@@ -42,13 +43,14 @@ const Work: React.FC = () => {
           </div>
         </div>
 
-        {/* Project 2 */}
+        {/* Project 2 - Fintech Trading Platform */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 group">
           <div className="lg:col-span-4 h-64 lg:h-auto rounded-xl overflow-hidden bg-gray-200 dark:bg-gray-900 order-first lg:order-last relative border border-subtle">
             <div className="absolute inset-0 engineering-grid opacity-20"></div>
             <div className="absolute inset-0 bg-gradient-to-bl from-primary/10 to-transparent"></div>
-            <div className="absolute inset-0 flex items-center justify-center p-8">
-              <span className="material-symbols-outlined text-6xl text-primary/40">candlestick_chart</span>
+            <div className="absolute inset-0 flex items-center justify-center">
+              {/* @ts-expect-error - spline-viewer is a custom element */}
+              <spline-viewer url="undefined"></spline-viewer>
             </div>
           </div>
           <div className="lg:col-span-8 flex flex-col justify-center">
